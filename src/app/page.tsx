@@ -1,13 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import Header from "@/components/layout/Header";
 import Hero from "@/components/landing/Hero";
 import Features from "@/components/landing/Features";
 import Dashboard from "@/components/landing/Dashboard";
 import ContentSection from "@/components/landing/ContentSection";
 import Cta from "@/components/landing/Cta";
-import Footer from "@/components/layout/Footer";
 import { PricingModal } from "@/components/modals/PricingModal";
 import { ContactModal } from "@/components/modals/ContactModal";
 

@@ -3,8 +3,11 @@
 import Link from "next/link";
 import { FacebookIcon, Instagram, Twitter } from "lucide-react";
 import Image from "next/image";
+import { ContactModal } from "../modals/ContactModal";
+import { useContactModal } from "@/hooks/useContactModal";
 
 export default function Footer() {
+  const { isOpen, openModal, closeModal } = useContactModal();
   return (
     <footer className="bg-gray-50 border-t border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -49,9 +52,13 @@ export default function Footer() {
             <h3 className="font-semibold text-black mb-4">Soporte</h3>
             <ul className="space-y-2 text-gray-600 text-sm">
               <li>
-                <Link href="#" className="hover:text-black">
+                <button
+                  type="button"
+                  className="hover:text-black text-left w-full"
+                  onClick={openModal}
+                >
                   Centro de Ayuda
-                </Link>
+                </button>
               </li>
               <li>
                 <Link href="faq" className="hover:text-black">
@@ -59,12 +66,12 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-black">
+                <Link href="term-and-conditions" className="hover:text-black">
                   Términos y Condiciones
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-black">
+                <Link href="policy" className="hover:text-black">
                   Política de Privacidad
                 </Link>
               </li>
@@ -83,6 +90,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      <ContactModal isOpen={isOpen} onClose={closeModal} />
     </footer>
   );
 }

@@ -24,14 +24,14 @@ export default function Cta({ onContact, onPricing }: CtaProps) {
         </div>
 
         {/* Title */}
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 leading-tight">
-          <span className="relative inline-block">
-            <span className="text-[#FFF5F5]">Impulsa</span>
-            {" tu camino hacia la plaza"}
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 leading-tight relative">
+          <span className="inline-block">
+            <span className="text-[#FFF5F5]">Impulsa</span> tu camino hacia la
+            plaza
             <span
-              className="absolute left-0 -bottom-1 w-full h-1 bg-white/30 rounded origin-left scale-x-100 transition-all duration-700"
+              className="absolute left-0 -bottom-1 w-0.5/6 lg:w-full h-1 bg-white/30 rounded origin-left scale-x-100 transition-all duration-1000 ease-out"
               aria-hidden="true"
-            ></span>
+            />
           </span>
         </h2>
 

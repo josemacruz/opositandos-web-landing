@@ -4,8 +4,8 @@ import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { X, Mail } from "lucide-react";
 
 interface ContactModalProps {
-  isOpen: boolean;
-  onClose: () => void;
+  readonly isOpen: boolean;
+  readonly onClose: () => void;
 }
 
 export function ContactModal({ isOpen, onClose }: ContactModalProps) {

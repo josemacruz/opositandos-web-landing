@@ -10,9 +10,9 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const links = [
-    { label: "Características", href: "#features" },
-    { label: "Plataforma", href: "#dashboard" },
-    { label: "Contenido", href: "#content" },
+    { label: "Características", href: "/#features" },
+    { label: "Plataforma", href: "/#dashboard" },
+    { label: "Contenido", href: "/#content" },
   ];
 
   return (
