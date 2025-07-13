@@ -8,6 +8,10 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "browserslist": [
+    "defaults and supports es6-module",
+    "not IE 11"
+  ],
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.11",
     "@radix-ui/react-dialog": "^1.1.14",
