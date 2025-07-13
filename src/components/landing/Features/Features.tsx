@@ -34,7 +34,7 @@ export default function Features() {
           </p>
         </div>
 
-        <div className="sm:hidden">
+        <div className="mb-4 sm:hidden">
           <div className="flex space-x-4 overflow-x-auto snap-x snap-mandatory scrollbar-hide px-2">
             {FEATURES.map((item, idx) => (
               <div
