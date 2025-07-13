@@ -134,6 +134,7 @@ function ImageCard({ src, rotate }: { src: string; rotate?: string }) {
             width={220}
             height={440}
             className="w-full h-auto"
+            priority
           />
         </div>
       </div>
