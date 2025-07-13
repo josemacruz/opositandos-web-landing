@@ -1,3 +1,5 @@
+"use client";
+
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { Badge } from "../ui/badge";
 import { Card } from "../ui/card";
