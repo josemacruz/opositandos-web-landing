@@ -23,7 +23,7 @@ export default function Content() {
             {CARDS.map((card) => (
               <div
                 key={card.title}
-                className="snap-start flex-shrink-0 w-[80%] sm:w-[60%] md:w-[45%]"
+                className="mb-10 snap-start flex-shrink-0 w-[80%] sm:w-[60%] md:w-[45%]"
               >
                 <Card className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
                   <div

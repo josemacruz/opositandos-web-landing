@@ -39,7 +39,7 @@ export default function Features() {
             {FEATURES.map((item, idx) => (
               <div
                 key={item.title}
-                className="snap-start flex-shrink-0 w-[80%]"
+                className="mb-10 snap-start flex-shrink-0 w-[80%]"
               >
                 <FeaturesCard
                   icon={item.icon}
