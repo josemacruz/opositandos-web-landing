@@ -9,6 +9,8 @@ import Cta from "@/components/landing/Cta";
 import { PricingModal } from "@/components/modals/PricingModal";
 import { ContactModal } from "@/components/modals/ContactModal";
 
+export const dynamic = "force-static";
+
 export default function LandingPage() {
   const [showPricingModal, setShowPricingModal] = useState(false);
   const [showContactModal, setShowContactModal] = useState(false);
