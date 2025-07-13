@@ -9,7 +9,7 @@ type FAQItemProps = {
   readonly onToggle: () => void;
 };
 
-export function FaqItem({ faq, expanded, onToggle }: FAQItemProps) {
+export default function FaqItem({ faq, expanded, onToggle }: FAQItemProps) {
   return (
     <Card className="overflow-hidden transition-all duration-300">
       <button
