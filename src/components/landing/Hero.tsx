@@ -128,14 +128,7 @@ function ImageCard({ src, rotate }: { src: string; rotate?: string }) {
     >
       <div className="bg-black rounded-[2rem] p-1.5 shadow-2xl">
         <div className="bg-white rounded-[1.5rem] overflow-hidden">
-          <Image
-            src={src}
-            alt=""
-            width={220}
-            height={440}
-            className="w-full h-auto"
-            priority
-          />
+          <Image src={src} alt="" width={220} height={440} priority />
         </div>
       </div>
     </div>

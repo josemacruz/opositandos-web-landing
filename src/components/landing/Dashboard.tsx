@@ -450,7 +450,6 @@ export default function Dashboard() {
                     alt={currentTab.title}
                     width={1200}
                     height={800}
-                    className="w-full h-auto"
                   />
                 </div>
               </div>

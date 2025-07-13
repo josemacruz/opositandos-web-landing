@@ -26,7 +26,6 @@ export default function Header() {
               alt="Opositandos"
               width={150}
               height={75}
-              className="h-auto w-auto"
               priority
             />
           </Link>
