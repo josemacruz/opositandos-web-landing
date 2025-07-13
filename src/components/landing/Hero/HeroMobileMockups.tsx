@@ -8,8 +8,8 @@ export function MobileMockups({ visible }: { readonly visible: boolean }) {
       }`}
     >
       <div className="flex gap-6">
-        <ImageCard src="/images/mobile-app.png" />
-        <ImageCard src="/images/mobile-feedback.png" rotate="-rotate-2" />
+        <ImageCard src="/images/mobile-app.webp" />
+        <ImageCard src="/images/mobile-feedback.webp" rotate="-rotate-2" />
       </div>
     </div>
   );

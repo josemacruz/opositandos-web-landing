@@ -37,7 +37,7 @@ export const DASHBOARD_TABS: Record<
     shortTitle: "Dashboard",
     description: "Vista general de tu progreso y actividades",
     icon: Home,
-    image: "/images/dashboard.png",
+    image: "/images/dashboard.webp",
     color: "EB5757",
     callouts: [
       {
@@ -75,7 +75,7 @@ export const DASHBOARD_TABS: Record<
     shortTitle: "Simulacros",
     description: "Practica con exámenes cronometrados",
     icon: Timer,
-    image: "/images/dashboard.png",
+    image: "/images/dashboard.webp",
     color: "2F80ED",
     callouts: [
       {
@@ -113,7 +113,7 @@ export const DASHBOARD_TABS: Record<
     shortTitle: "Estadísticas",
     description: "Análisis detallado de tu rendimiento",
     icon: TrendingUp,
-    image: "/images/dashboard.png",
+    image: "/images/dashboard.webp",
     color: "27AE60",
     callouts: [
       {
@@ -151,7 +151,7 @@ export const DASHBOARD_TABS: Record<
     shortTitle: "Práctica",
     description: "Estudia sin presión de tiempo",
     icon: Play,
-    image: "/images/dashboard.png",
+    image: "/images/dashboard.webp",
     color: "F39C12",
     callouts: [
       {
@@ -189,7 +189,7 @@ export const DASHBOARD_TABS: Record<
     shortTitle: "Temarios",
     description: "Accede a todo el material de estudio",
     icon: Library,
-    image: "/images/dashboard.png",
+    image: "/images/dashboard.webp",
     color: "9B59B6",
     callouts: [
       {
@@ -227,7 +227,7 @@ export const DASHBOARD_TABS: Record<
     shortTitle: "Perfil",
     description: "Gestiona tu cuenta y preferencias",
     icon: UserCircle,
-    image: "/images/dashboard.png",
+    image: "/images/dashboard.webp",
     color: "E74C3C",
     callouts: [
       {
