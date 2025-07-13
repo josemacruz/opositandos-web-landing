@@ -16,7 +16,7 @@ const PLAN_INFO: Record<
     subtitle: "Acceso esencial",
     color: "#2F80ED",
     includes: [
-      "Acceso a +5,000 preguntas",
+      "Acceso a +20,000 preguntas",
       "Simulacros cronometrados",
       "Estadísticas básicas",
     ],
@@ -50,7 +50,7 @@ interface PricingModalProps {
   onClose: () => void;
 }
 
-export function PricingModal({ isOpen, onClose }: PricingModalProps) {
+export function PricingModal({ isOpen, onClose }: Readonly<PricingModalProps>) {
   const [selected, setSelected] = useState<PlanKey | null>(null);
 
   return (
@@ -90,7 +90,6 @@ export function PricingModal({ isOpen, onClose }: PricingModalProps) {
             Selecciona tu plan y descubre lo que incluye.
           </p>
 
-          {/* 1) SELECCIÓN DE PLAN */}
           <div className="grid grid-cols-1 gap-3 text-left">
             {(["basic", "complete", "premium"] as PlanKey[]).map((key) => {
               const plan = PLAN_INFO[key];
@@ -133,7 +132,6 @@ export function PricingModal({ isOpen, onClose }: PricingModalProps) {
             })}
           </div>
 
-          {/* 2) LISTADO DINÁMICO */}
           {selected && (
             <div className="bg-gray-50 rounded-xl p-4 text-left">
               <h4 className="font-semibold text-black mb-2">¿Qué incluye?</h4>

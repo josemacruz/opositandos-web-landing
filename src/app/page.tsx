@@ -1,13 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import Hero from "@/components/landing/Hero";
-import Features from "@/components/landing/Features";
-import Dashboard from "@/components/landing/Dashboard";
-import ContentSection from "@/components/landing/ContentSection";
-import Cta from "@/components/landing/Cta";
+
 import { PricingModal } from "@/components/modals/PricingModal";
 import { ContactModal } from "@/components/modals/ContactModal";
+import Hero from "@/components/landing/Hero/Hero";
+import Features from "@/components/landing/Features/Features";
+import Dashboard from "@/components/landing/Dashboard/Dashboard";
+import Content from "@/components/landing/Content/Content";
+import Cta from "@/components/landing/Cta/Cta";
 
 export const dynamic = "force-static";
 
@@ -21,7 +22,7 @@ export default function LandingPage() {
 
       <Features />
       <Dashboard />
-      <ContentSection />
+      <Content />
       <Cta
         onContact={() => setShowContactModal(true)}
         onPricing={() => setShowPricingModal(true)}

@@ -3,11 +3,13 @@
 import Link from "next/link";
 import { FacebookIcon, Instagram, Twitter } from "lucide-react";
 import Image from "next/image";
-import { ContactModal } from "../modals/ContactModal";
+import { ContactModal } from "../../modals/ContactModal";
 import { useContactModal } from "@/hooks/useContactModal";
+import { LITERALS } from "./Footer.literals";
 
 export default function Footer() {
   const { isOpen, openModal, closeModal } = useContactModal();
+
   return (
     <footer className="bg-gray-50 border-t border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -16,16 +18,13 @@ export default function Footer() {
             <Link href="/" className="inline-block">
               <Image
                 src="/logo.svg"
-                alt="Opositandos Logo"
+                alt={LITERALS.logoAlt}
                 width={100}
                 height={50}
                 priority
               />
             </Link>
-            <p className="text-gray-600 text-sm">
-              Plataforma especializada en la preparación de oposiciones con
-              herramientas avanzadas y contenido actualizado.
-            </p>
+            <p className="text-gray-600 text-sm">{LITERALS.description}</p>
             <div className="flex space-x-3 mt-4">
               <Link
                 href="#"
@@ -50,7 +49,9 @@ export default function Footer() {
 
           {/* Soporte */}
           <div>
-            <h3 className="font-semibold text-black mb-4">Soporte</h3>
+            <h3 className="font-semibold text-black mb-4">
+              {LITERALS.supportTitle}
+            </h3>
             <ul className="space-y-2 text-gray-600 text-sm">
               <li>
                 <button
@@ -58,37 +59,33 @@ export default function Footer() {
                   className="hover:text-black text-left w-full"
                   onClick={openModal}
                 >
-                  Centro de Ayuda
+                  {LITERALS.links.helpCenter}
                 </button>
               </li>
               <li>
                 <Link href="faq" className="hover:text-black">
-                  FAQ
+                  {LITERALS.links.faq}
                 </Link>
               </li>
               <li>
                 <Link href="term-and-conditions" className="hover:text-black">
-                  Términos y Condiciones
+                  {LITERALS.links.terms}
                 </Link>
               </li>
               <li>
                 <Link href="policy" className="hover:text-black">
-                  Política de Privacidad
+                  {LITERALS.links.privacy}
                 </Link>
               </li>
             </ul>
           </div>
         </div>
 
-        {/* Bottom bar */}
         <div className="border-t border-gray-200 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
           <p>
-            &copy; {new Date().getFullYear()} opositandos. Todos los derechos
-            reservados.
+            &copy; {new Date().getFullYear()} opositandos. {LITERALS.copyright}
           </p>
-          <div className="mt-4 md:mt-0">
-            Diseñado para opositores exigentes.
-          </div>
+          <div className="mt-4 md:mt-0">{LITERALS.tagline}</div>
         </div>
       </div>
       <ContactModal isOpen={isOpen} onClose={closeModal} />

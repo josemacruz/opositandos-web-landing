@@ -1,4 +1,4 @@
-export const Card = ({
+export const FeaturesCard = ({
   icon: Icon,
   title,
   desc,

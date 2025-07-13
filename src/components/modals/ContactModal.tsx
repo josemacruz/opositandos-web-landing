@@ -24,7 +24,6 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
           flex flex-col
         `}
       >
-        {/* Botón cerrar */}
         <button
           onClick={onClose}
           className="absolute top-4 right-4 w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors z-10"
@@ -32,7 +31,6 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
           <X className="w-4 h-4" />
         </button>
 
-        {/* Contenido */}
         <div className="p-8 flex flex-col justify-between flex-1">
           <div className="space-y-6">
             <div className="w-16 h-16 bg-[#EB5757]/10 rounded-2xl flex items-center justify-center mx-auto">
