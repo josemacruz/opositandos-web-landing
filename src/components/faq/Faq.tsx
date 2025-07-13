@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import { CATEGORIES, FAQS } from "./Faq.constants";
 import { FaqCta } from "./FaqCta";
 import { FaqHero } from "./FaqHero";
-import FaqItem from "./FaqItem";
+import { FaqItem } from "./FaqItems";
 
 export default function Faq() {
   const contactModal = useContactModal();
