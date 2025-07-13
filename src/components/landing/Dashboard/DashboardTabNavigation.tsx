@@ -1,5 +1,5 @@
 import { DASHBOARD_TABS } from "./Dashboard.constants";
-import { TabKey } from "./Dashboard.type";
+import { TabKey } from "./Dashboard.types";
 
 type DashboardTabNavigationProps = {
   readonly activeTab: TabKey;

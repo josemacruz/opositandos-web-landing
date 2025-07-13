@@ -12,7 +12,7 @@ import {
   Home,
   Play,
 } from "lucide-react";
-import { TabKey } from "./Dashboard.type";
+import { TabKey } from "./Dashboard.types";
 
 export const DASHBOARD_TABS: Record<
   TabKey,

@@ -1,5 +1,5 @@
 import { Expand } from "lucide-react";
-import { TabKey } from "./Dashboard.type";
+import { TabKey } from "./Dashboard.types";
 import Image from "next/image";
 import { DASHBOARD_TABS } from "./Dashboard.constants";
 import { LITERALS } from "./Dashboard.literals";

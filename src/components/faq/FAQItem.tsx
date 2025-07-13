@@ -1,12 +1,7 @@
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { Badge } from "../ui/badge";
 import { Card } from "../ui/card";
-
-type FAQ = {
-  question: string;
-  answer: string;
-  popular?: boolean;
-};
+import { FAQ } from "./Faq.types";
 
 type FAQItemProps = {
   readonly faq: FAQ;
@@ -14,7 +9,7 @@ type FAQItemProps = {
   readonly onToggle: () => void;
 };
 
-export function FAQItem({ faq, expanded, onToggle }: FAQItemProps) {
+export function FaqItem({ faq, expanded, onToggle }: FAQItemProps) {
   return (
     <Card className="overflow-hidden transition-all duration-300">
       <button
