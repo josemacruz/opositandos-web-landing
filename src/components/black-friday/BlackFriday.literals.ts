@@ -1,11 +1,11 @@
 export const LITERALS = {
   badge: "Black Friday 2026",
   title: {
-    normal: "Tu plaza, ahora ",
-    highlighted: "hasta un 50% más cerca",
+    normal: "Tu plaza, ahora con un ",
+    highlighted: "20% de descuento",
   },
   subtitle:
-    "La mayor oferta del año en Opositandos. Prepara tus oposiciones a Policía Local con miles de preguntas actualizadas, simulacros y seguimiento de tu progreso.",
+    "Solo con código: 20% de descuento en cualquier plan de Opositandos. Prepara tus oposiciones a Policía Local con miles de preguntas actualizadas, simulacros y seguimiento de tu progreso.",
   countdown: {
     startsIn: "La oferta empieza en",
     endsIn: "La oferta termina en",
@@ -18,9 +18,10 @@ export const LITERALS = {
   copied: "¡Copiado!",
   plans: {
     title: "Elige tu plan con descuento",
-    subtitle: "Precios exclusivos solo durante la semana de Black Friday.",
+    subtitle:
+      "Aplica el código en cualquier plan durante la semana de Black Friday.",
     featured: "Más popular",
-    off: "dto.",
+    withCode: "con el código",
     button: "Quiero esta oferta",
   },
   benefits: { title: "¿Por qué ahora?" },

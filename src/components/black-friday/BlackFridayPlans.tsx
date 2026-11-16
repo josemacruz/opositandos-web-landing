@@ -1,6 +1,6 @@
 import { CheckCircle } from "lucide-react";
 import { SITE_CONFIG } from "@/lib/constans";
-import { PLANS, PROMO_CODE } from "./BlackFriday.constants";
+import { DISCOUNT, PLANS, PROMO_CODE } from "./BlackFriday.constants";
 import { LITERALS } from "./BlackFriday.literals";
 
 function offerMailto(planLabel: string) {
@@ -49,18 +49,21 @@ export function BlackFridayPlans() {
                 {plan.subtitle}
               </p>
 
-              <div className="flex items-baseline gap-2 mb-8">
+              <div className="mb-8">
                 <span
                   className="text-6xl font-extrabold tracking-tight"
                   style={{ color: plan.color }}
                 >
-                  -{plan.discount}%
+                  -{DISCOUNT}%
                 </span>
-                <span
-                  className={plan.featured ? "text-white/60" : "text-gray-500"}
+                <p
+                  className={`text-sm mt-1 ${
+                    plan.featured ? "text-white/60" : "text-gray-500"
+                  }`}
                 >
-                  {LITERALS.plans.off}
-                </span>
+                  {LITERALS.plans.withCode}{" "}
+                  <span className="font-mono font-bold">{PROMO_CODE}</span>
+                </p>
               </div>
 
               <ul className="space-y-3 mb-8 flex-1">

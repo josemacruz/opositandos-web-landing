@@ -9,11 +9,13 @@ export const OFFER_END = new Date("2026-11-30T23:59:59+01:00");
 
 export const PROMO_CODE = "BLACKFRIDAY26";
 
+/** Descuento único (%) aplicable a cualquier plan al usar PROMO_CODE. */
+export const DISCOUNT = 20;
+
 export type BlackFridayPlan = {
   id: "basic" | "complete" | "premium";
   label: string;
   subtitle: string;
-  discount: number;
   color: string;
   featured: boolean;
   includes: string[];
@@ -24,7 +26,6 @@ export const PLANS: BlackFridayPlan[] = [
     id: "basic",
     label: "Plan Básico",
     subtitle: "Acceso esencial",
-    discount: 30,
     color: "#2F80ED",
     featured: false,
     includes: [
@@ -37,7 +38,6 @@ export const PLANS: BlackFridayPlan[] = [
     id: "complete",
     label: "Plan Completo",
     subtitle: "Todas las funciones",
-    discount: 40,
     color: "#EB5757",
     featured: true,
     includes: [
@@ -51,7 +51,6 @@ export const PLANS: BlackFridayPlan[] = [
     id: "premium",
     label: "Plan Premium",
     subtitle: "Soporte personalizado",
-    discount: 50,
     color: "#27AE60",
     featured: false,
     includes: [
@@ -76,8 +75,8 @@ export const BENEFITS = [
   },
   {
     icon: Gift,
-    title: "Precio bloqueado",
-    description: "Mantén el descuento mientras sigas suscrito.",
+    title: "Un solo código",
+    description: `Usa ${PROMO_CODE} y obtén un ${DISCOUNT}% en cualquier plan.`,
   },
   {
     icon: Clock,
@@ -96,13 +95,12 @@ export const BF_FAQS = [
   {
     id: 2,
     question: "¿Cómo aplico el descuento?",
-    answer: `Escríbenos indicando el plan que te interesa y el código ${PROMO_CODE}. Te enviaremos el enlace de pago con el descuento ya aplicado.`,
+    answer: `El descuento del ${DISCOUNT}% solo se aplica con el código ${PROMO_CODE}. Escríbenos indicando el plan que te interesa y el código, y te enviaremos el enlace de pago con el descuento ya aplicado.`,
   },
   {
     id: 3,
-    question: "¿El descuento se mantiene al renovar?",
-    answer:
-      "Sí. Mientras mantengas tu suscripción activa conservarás el precio de Black Friday.",
+    question: "¿El descuento es el mismo para todos los planes?",
+    answer: `Sí. El código ${PROMO_CODE} aplica un ${DISCOUNT}% de descuento sobre cualquiera de los planes.`,
   },
   {
     id: 4,
